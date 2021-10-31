@@ -1,0 +1,19 @@
+body{
+    /* text-align: center; */
+    background-color:lightblue;
+}
+h1{
+    text-align: center;
+}
+.container{
+    left:200px;
+    right:200px;
+    border-top: 1px solid black;
+    background-color: lightgreen;
+    height: 500px;
+}  
+button{
+
+    background-color:blue;
+    color: white;
+    }

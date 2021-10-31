@@ -1,0 +1,43 @@
+body{
+    background-color: #3b3a37;
+    color: white;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+img{
+    width: 20%;
+}
+ul>li{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+
+}
+ol>li{
+    font-family: cursive;
+}
+.first-name,.middle-name,.last-name{
+    font-style: oblique;
+    font: bold;
+}
+.part-green{
+    color: green;
+}
+.part-yellow {
+    color: yellow;
+}
+.part-red {
+    color: red;
+}
+.part-green,.part-yellow,.part-red{
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+h1{
+    color: #029ee0;
+}
+.imd{
+    color: #bd2b2e;
+}

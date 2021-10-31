@@ -1,0 +1,20 @@
+body {
+    text-align: center;
+    display: inline;
+
+}
+
+.form {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    text-align: left;
+
+}
+#start{
+    background-color:green;
+    left: 0px;
+    text-align: left;
+    color:white;
+    float:left;
+}

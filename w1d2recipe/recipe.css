@@ -1,0 +1,37 @@
+.title>h1{
+    text-align: center;
+}
+h1{
+    background-color: #F0F0F0;
+    color: #A4A400;
+    text-decoration: underline;
+}
+em{
+    font-weight: bold;
+    font-style: normal;
+}
+li>ul{
+    background-color: #FFFFA8;
+}
+.comment-list,.process-time,.comment-list ul{
+    list-style-type: none;
+    padding:0;
+}
+.comment-list{
+    padding: 20px;
+}
+body{
+    background-image: url("image/silverware.jpg");
+}
+footer{
+    text-align: right;
+}
+footer ul{
+    text-align: right;
+    list-style: none;
+}
+
+.links a{
+    color: #A4A400;
+}
+

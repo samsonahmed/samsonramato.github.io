@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="webForm1.css">
+    <title>Document</title>
+    <script>
+        const onPasswordType = () => {
+            const password = document.getElementById('password').value;
+            if (password.match(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{10,}$/)) {
+                btn.disabled = false;
+            } else {
+                btn.disabled = true;
+            }
+        }
+        window.onload = function() {
+            const btn = document.getElementById('btn');
+            btn.disabled = true;
+
+            
+             onPasswordType();
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+     <form action="">
+         <p>Email address</p>
+         <input  id="email" type="text" placeholder="Enter Email">
+         <p id="info">we'll never share your email with anyone else</p>
+         <p>Password</p>
+         <input id="password" type="password" onkeyup="onPasswordType()" placeholder="password"><br/><br/>
+         <input type="checkbox" value="checkbox1" >
+         <label for="checkbox1">check me out</label><br/><br/>
+         <input id="link" type="url"  pattern="https?://.+"  title="please enter valid url"  required ><br/><br/>
+         <input id="btn" type="submit" value="submit">
+     </form>
+         
+    </div>
+</body>
+</html>

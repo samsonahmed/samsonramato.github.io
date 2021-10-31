@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="/js/index.js"></script>
+</head>
+<body>
+    <h1>Fairfield Electronics Shop</h1>
+    <div class="container">
+        <p>Qauntity of  <%=data.details[0].name %>: <span id="quantity"></span></p>
+        <% for(var i=0; i<data.details.length; i++) {%>
+            <li>
+                ID: <%= data.details[i].id %>, Name: <%= data.details[i].name %>, Description: <%= data.details[i].description %>, Price: <%= data.details[i].price %>
+                <form action="/addToCart" method="post">
+                    <input type="hidden" name="name" value="<%=data.details[i].name%>">
+                    <input type="hidden" name="price" value="<%=data.details[i].price%>">
+                    <button id="add">Add to Cart</button>
+                </form>
+            </li>
+        <% } %>
+        <a href="/cart">show list of cart</a>
+    </div>
+</body>
+</html>

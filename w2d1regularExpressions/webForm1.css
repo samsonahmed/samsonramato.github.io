@@ -1,0 +1,33 @@
+#email,#password{
+    width: 600px;
+    height: 40px;
+    border-radius: 10px 10px;
+    border-color: #6b6b6b;
+}
+.container{
+    margin: 10px 10px;
+}
+.container p,label{
+    color:black;
+    font-size: 20px;
+    font: bold;
+} 
+
+#info{
+    font-size: 18px;
+    color: rgb(138, 133, 133);
+}
+#button{
+    font: bold;
+    font-size: 30px;
+    background-color: rgb(67, 67, 219);
+    color: white;
+    width: 150px;
+    height: 50px;
+}
+#link{
+    width: 600px;
+    height: 40px;
+    border-radius: 10px 10px;
+    border-color: #6b6b6b;
+}

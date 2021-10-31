@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="webForm2.css">
+    <style>
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <p>Mum Golden Dome Market : : : SRM System</p>
+        <p>Products</p>
+        <p>Suppliers</p>
+        <p>Hello! &nbsp;  <button>Sign Out</button></p>
+    </nav>
+    <h1>New Product Form</h1>
+    <div class="main-container">
+        <div class="left">
+            <form>
+                <label>Phone Number</label>
+                <input type="text" placeholder="Enter email">
+                <label>Name</label>
+                <input type="text">
+                <label>Unit Price</label>
+                <input type="text" placeholder="0.0" pattern="(\d)*\.(\d)*">
+            </form>
+        </div>
+        <div class="right">
+            <form>
+                <label>Quantity in stock</label>
+                <input type="text" placeholder="Enter email">
+                <label>Supplier:</label>
+                <select name="" >
+                    <option value="" disabled selected hidden>Select Supplier</option>
+                    <option value="">Amazon</option>
+                    <option value="">Walmart</option>
+                    <option value="">Ebay</option>
+                </select>
+                <label>Date Supplied:</label>
+                <input type="date" >
+                <p> <span><button id="reset">Reset</button></span>
+                    <span><button id="cancel"> Cancel</button></span>
+                    <span> <button id="add"> Add Product</button></span>
+                </p>
+            </form>
+
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    font-family: sans-serif;
+    background-image: url("images/background.png");
+}
+.banner{
+    position: fixed;
+    background-image: url("images/bannerbg.png");
+    /* background-repeat: repeat-x; */
+    text-align: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.banner img{
+   height: 50px;
+}
+body>h1{
+    text-align: center;
+    margin-top: 70px;
+    font-size: 24pt;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 3px 3px #999999;
+    padding: 10px;
+}
+.container{
+    width: 50%;
+    margin: auto;
+    border: 4px gray solid; 
+    border-radius: 20px;
+    position: relative;
+
+}
+.container aside{
+    width: 30%;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+    background: #A2B964;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    font-size: 12px;
+}
+.container aside img{
+    width: 100%;
+    border-top-right-radius: 18px;
+
+}
+.container dl{
+    padding: 10px;
+    color: #424e49;
+
+}
+.container aside dt{
+    font-weight: bold;
+}
+.container aside dd {
+    margin-bottom: 15px;
+}
+aside dl ul {
+    list-style-type: none;
+    display: initial;
+}
+.container section {
+    width: 70%;
+}
+.container > section .section-header {
+    background-image: url("images/rbg.png");
+    border-top-left-radius: 18px;
+    height: 85px;
+    color: red;
+    font-size: 60px;
+    font-weight: bold;
+}
+section .section-header img{
+    border-top-left-radius: 18px;
+    height: 85px;
+    margin-right: 10px;
+}
+
+section .section-header *{
+    float: left;
+}
+
+section .content{
+    column-count:2;
+    column-gap: 10px;
+    padding: 10px;
+}
+.content .column{
+    height: 1000px;
+}
+
+.content .review > :nth-child(1){
+    border: 2px solid #6b776b;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #E8DC9B;
+
+}
+
+.content .review img{
+    float: left;
+    margin-right: 5px;
+}
+
+.content .review > p:nth-child(2) {
+    color: #424e49;
+}
+
+.container > p:last-child {
+    /* background: #A2B964; */
+    background: #5ca85c;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    text-align: center;
+    color: #424e49;
+}
+
+.validators {
+    position:fixed;
+    right: 0;
+    bottom: 0;
+}

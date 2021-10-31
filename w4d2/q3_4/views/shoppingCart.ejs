@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1>The content of your shopping cart</h1>
+    <div class="container">
+        <ul>
+            <% for(let v in data){%>
+            <% if(v==='cookie') continue;%>
+              <ul>Details of item <%=data[v].name %> </br>
+                    <li>Name:<%=data[v].name %> </li>
+                    <li>Price:<%=data[v].price %> </li>
+                    <li>Qauntity:<%=data[v].quantity %> </li>
+                </br>
+                </ul>
+                <% } %>
+        </ul>
+    </div>
+</body>
+
+</html>
